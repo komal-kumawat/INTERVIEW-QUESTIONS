@@ -123,9 +123,15 @@ So instead of rows and columns, MongoDB works with:
 > **MongoDB is a flexible, document-based NoSQL database, while SQL databases are structured, table-based relational systems.**
 
 
-Q.2: explain the structure of mongodb document
+Q.2 explain the structure of mongodb document
 
 Q.3 What is BSON ? Why is it used in mongodb document ?
 
-Q.4 
+Q.4 Differentiate between mongoDB and MySQL
+Q.5 Explain mongoDB's replication and its importance
+Q.6 What is indexing in mongoDB?
+Q.7 How does sharding work in mongodb?
+Q.8 Discuss the types of NoSQL databases
+Q.9 what is GridFS in MongoDB?
+Q.10 How does MongoDB ensure high availability?
 
