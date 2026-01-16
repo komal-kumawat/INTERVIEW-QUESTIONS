@@ -169,6 +169,78 @@ Key characteristics:
 
 
 Q.3 What is BSON ? Why is it used in mongodb document ?
+Ans 
+
+**BSON** stands for **Binary JSON**.
+It is a **binary-encoded serialization format** used by MongoDB to store documents internally.
+
+Although MongoDB documents look like JSON, they are actually stored as **BSON** for better performance and efficiency.
+
+---
+
+### **Why BSON is used in MongoDB**
+
+MongoDB uses BSON because it provides several advantages over plain JSON:
+
+1️⃣ **Faster Processing**
+BSON stores data in binary format, which is **faster to read and write** compared to text-based JSON.
+
+2️⃣ **Supports More Data Types**
+BSON supports additional data types that JSON does not, such as:
+
+* `Date`
+* `ObjectId`
+* `Binary data`
+* `Decimal128`
+
+3️⃣ **Efficient Storage**
+BSON stores **type and length information**, making it quicker to traverse and access fields.
+
+4️⃣ **Better for Indexing**
+Binary representation allows MongoDB to **index and query data efficiently**.
+
+5️⃣ **Cross-language Support**
+BSON works consistently across different programming languages used with MongoDB.
+
+---
+
+### **Example**
+
+JSON (what developers see):
+
+```json
+{
+  "name": "Komal",
+  "createdAt": "2026-01-15"
+}
+```
+
+BSON (how MongoDB stores it internally):
+
+```text
+name: String
+createdAt: Date
+```
+
+---
+
+### **One-Line Interview Answer**
+
+> **BSON is Binary JSON, a binary-encoded format used by MongoDB to store documents efficiently, supporting more data types and faster querying than JSON.**
+
+---
+
+### **Quick Comparison: JSON vs BSON**
+
+| Feature    | JSON    | BSON      |
+| ---------- | ------- | --------- |
+| Format     | Text    | Binary    |
+| Speed      | Slower  | Faster    |
+| Data types | Limited | Rich      |
+| Storage    | Larger  | Optimized |
+
+---
+
 
 Q.4 Differentiate between mongoDB and MySQL
 Q.5 Explain mongoDB's replication and its importance
