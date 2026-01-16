@@ -386,10 +386,7 @@ Secondaries ← Replicate via oplog
 * What is an arbiter?
 * Can we write to secondary nodes?
 
-Here are **clear, short, interview-ready answers** to each question 👇
-(You can say these confidently in interviews.)
 
----
 
 ## **1️⃣ What happens if the primary node fails?**
 
@@ -434,7 +431,7 @@ It is used when you need an **odd number of votes** to break election ties.
 
 **One-line answer:**
 
-> An arbiter helps in primary elections but does not store or replicate data.
+> An arbiter is a MongoDB replica set member that does not store data but participates in elections to maintain an odd number of votes and ensure automatic failover
 
 ---
 
