@@ -243,6 +243,71 @@ createdAt: Date
 
 
 Q.4 Differentiate between mongoDB and MySQL
+ans 
+### **Differentiate between MongoDB and MySQL (Interview Answer)**
+
+**MongoDB** is a **NoSQL, document-based database**, while **MySQL** is a **relational (SQL) database** that stores data in tables with rows and columns.
+
+---
+
+### **Key Differences**
+
+| Feature        | MongoDB                             | MySQL                         |
+| -------------- | ----------------------------------- | ----------------------------- |
+| Database type  | NoSQL                               | Relational (SQL)              |
+| Data model     | Document-based (JSON/BSON)          | Table-based (rows & columns)  |
+| Schema         | Schema-less (flexible)              | Fixed schema                  |
+| Query language | MongoDB Query Language (MQL)        | SQL                           |
+| Relationships  | Embedded documents or references    | Foreign keys & JOINs          |
+| Scalability    | Horizontal scaling (sharding)       | Vertical scaling (mainly)     |
+| Transactions   | Limited (supported but not primary) | Strong ACID transactions      |
+| Performance    | Fast for large & unstructured data  | Efficient for complex queries |
+| Use cases      | Real-time apps, big data            | Banking, enterprise apps      |
+
+---
+
+### **Example**
+
+**MySQL Table**
+
+| id | name  | age |
+| -- | ----- | --- |
+| 1  | Komal | 22  |
+
+**MongoDB Document**
+
+```json
+{
+  "_id": 1,
+  "name": "Komal",
+  "age": 22
+}
+```
+
+---
+
+### **When to Use MongoDB**
+
+* Data structure changes frequently
+* Large-scale applications
+* Real-time analytics
+* JSON-based applications
+
+### **When to Use MySQL**
+
+* Highly structured data
+* Complex joins and transactions
+* Financial or enterprise systems
+* Strong data consistency is required
+
+---
+
+### **One-Line Interview Answer**
+
+> **MongoDB is a flexible, document-oriented NoSQL database optimized for scalability, while MySQL is a structured relational database ideal for complex queries and transactions.**
+
+---
+
 Q.5 Explain mongoDB's replication and its importance
 Q.6 What is indexing in mongoDB?
 Q.7 How does sharding work in mongodb?
