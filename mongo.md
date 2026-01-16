@@ -124,6 +124,49 @@ So instead of rows and columns, MongoDB works with:
 
 
 Q.2 explain the structure of mongodb document
+ans 
+
+A **MongoDB document** is a **JSON-like data structure** stored internally in **BSON (Binary JSON)** format.
+It consists of **key–value pairs** and represents a single record in a collection.
+
+Every document contains a mandatory **`_id` field**, which uniquely identifies it.
+
+MongoDB documents support:
+
+* **Primitive fields** (string, number, boolean)
+* **Arrays**
+* **Embedded (nested) documents**
+* **Different data types**
+
+Example:
+
+```json
+{
+  "_id": ObjectId("507f1f77bcf86cd799439011"),
+  "name": "Komal",
+  "age": 22,
+  "skills": ["React", "MongoDB"],
+  "address": {
+    "city": "Jaipur",
+    "pincode": 302001
+  }
+}
+```
+
+Key characteristics:
+
+* **Schema-less**: documents in the same collection can have different fields
+* **Hierarchical structure**: supports nesting and arrays
+* **Flexible and scalable**: avoids complex joins
+
+---
+
+### **One-Line Version (If Interviewer Interrupts)**
+
+> A MongoDB document is a BSON-based, JSON-like structure made of key-value pairs, with a unique `_id`, supporting arrays, nested documents, and flexible schemas.
+
+---
+
 
 Q.3 What is BSON ? Why is it used in mongodb document ?
 
