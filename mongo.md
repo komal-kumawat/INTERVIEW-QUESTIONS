@@ -135,3 +135,68 @@ Q.8 Discuss the types of NoSQL databases
 Q.9 what is GridFS in MongoDB?
 Q.10 How does MongoDB ensure high availability?
 
+📌 Schema Design & Relationships
+
+Q.11 What is embedding vs referencing? When to use each?
+
+Q.12 How do you model one-to-many relationships in MongoDB?
+
+Q.13 How do you avoid data duplication in MongoDB?
+
+📌 Indexing & Performance
+
+Q.14 Types of indexes in MongoDB (single, compound, multikey, text, hashed)
+
+Q.15 What is a compound index and when should you use it?
+
+Q.16 How can indexes slow down performance?
+
+Q.17 What is the explain() method?
+
+📌 Aggregation Framework
+
+Q.18 What is aggregation in MongoDB?
+
+Q.19 Difference between find() and aggregate()
+
+Q.20 Explain $match, $group, $project, $lookup
+
+📌 Mongoose (Very Important for MERN)
+
+Q.21 What is Mongoose?
+
+Q.22 Difference between MongoDB and Mongoose
+
+Q.23 What are schemas and models in Mongoose?
+
+Q.24 What are middleware (pre & post hooks)?
+
+Q.25 What is population in Mongoose?
+
+📌 Transactions & Consistency
+
+Q.26 Does MongoDB support transactions?
+
+Q.27 What are ACID properties in MongoDB?
+
+Q.28 What is write concern and read concern?
+
+📌 Security & Backup
+
+Q.29 How do you secure a MongoDB database?
+
+Q.30 What is authentication and authorization in MongoDB?
+
+Q.31 How do you take backup and restore in MongoDB?
+
+🧠 Interviewer’s Favorite Scenario Questions
+
+These are 🔥 gold questions:
+
+Q.32 When should MongoDB NOT be used?
+
+Q.33 How would you design a chat application schema?
+
+Q.34 How do you handle millions of users in MongoDB?
+
+Q.35 What happens if the primary node goes down?
