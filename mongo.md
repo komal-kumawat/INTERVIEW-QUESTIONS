@@ -466,9 +466,13 @@ However:
 
 
 Q.6 What is indexing in mongoDB?
+
 Q.7 How does sharding work in mongodb?
+
 Q.8 Discuss the types of NoSQL databases
+
 Q.9 what is GridFS in MongoDB?
+
 Q.10 How does MongoDB ensure high availability?
 
 📌 Schema Design & Relationships
