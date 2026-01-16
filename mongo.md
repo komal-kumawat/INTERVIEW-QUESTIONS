@@ -386,6 +386,87 @@ Secondaries ← Replicate via oplog
 * What is an arbiter?
 * Can we write to secondary nodes?
 
+Here are **clear, short, interview-ready answers** to each question 👇
+(You can say these confidently in interviews.)
+
+---
+
+## **1️⃣ What happens if the primary node fails?**
+
+If the **primary node fails**, MongoDB automatically:
+
+* Detects the failure
+* Starts an **election**
+* Promotes one of the **secondary nodes to primary**
+
+➡ This process is called **automatic failover**
+➡ No manual intervention is required
+➡ The application continues to work with minimal downtime
+
+**One-line answer:**
+
+> If the primary fails, MongoDB automatically elects a new primary from the secondaries.
+
+---
+
+## **2️⃣ What is an oplog?**
+
+The **oplog (operations log)** is a **special capped collection** that stores all write operations performed on the primary node.
+
+* Secondary nodes **read the oplog**
+* They **replay the operations** to stay in sync with the primary
+
+**One-line answer:**
+
+> The oplog is a log of write operations that secondary nodes use to replicate data from the primary.
+
+---
+
+## **3️⃣ What is an arbiter?**
+
+An **arbiter** is a MongoDB replica set member that:
+
+* **Does not store data**
+* **Does not handle queries**
+* Only **participates in elections**
+
+It is used when you need an **odd number of votes** to break election ties.
+
+**One-line answer:**
+
+> An arbiter helps in primary elections but does not store or replicate data.
+
+---
+
+## **4️⃣ Can we write to secondary nodes?**
+
+❌ **No**, by default:
+
+* **Writes are allowed only on the primary node**
+
+However:
+
+* **Reads can be allowed from secondary nodes** using read preferences
+* Writing to secondaries is possible **only in special cases** (e.g., maintenance mode)
+
+**One-line answer:**
+
+> By default, MongoDB allows writes only on the primary node, not on secondaries.
+
+---
+
+## ⭐ Quick Interview Summary
+
+| Question            | Short Answer                            |
+| ------------------- | --------------------------------------- |
+| Primary fails?      | New primary is elected automatically    |
+| Oplog?              | Log of write operations for replication |
+| Arbiter?            | Election-only node, no data             |
+| Write to secondary? | ❌ No (default)                          |
+
+---
+
+
 
 Q.6 What is indexing in mongoDB?
 Q.7 How does sharding work in mongodb?
