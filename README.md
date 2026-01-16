@@ -1,3 +1,43 @@
+Here’s a clean, professional **README.md** you can directly use for your GitHub repo 👇
+(It’s suitable for interview prep and looks good to recruiters.)
+
+---
+
+```md
+# MERN Stack Interview Questions 🚀
+
+This repository contains **commonly asked MERN Stack interview questions** along with clear explanations and examples.  
+It is designed to help with **interview preparation**, **concept revision**, and **last-minute brushing up**.
+
+---
+
+## 📌 What is MERN Stack?
+
+**MERN** is a full-stack JavaScript technology stack consisting of:
+
+- **MongoDB** – NoSQL database  
+- **Express.js** – Backend web framework  
+- **React.js** – Frontend library  
+- **Node.js** – JavaScript runtime  
+
+---
+
+## 📂 Repository Structure
+
+The repository is organized by topics for easy navigation:
+
+```
+
+📦 mern-interview-questions
+┣ 📁 MongoDB
+┣ 📁 Express
+┣ 📁 React
+┣ 📁 NodeJS
+┣ 📁 JavaScript
+┣ 📁 System-Design
+┗ 📄 README.md
+
+```
 
 ---
 
@@ -94,3 +134,5 @@ MERN Stack Developer | Learner | Interview Prep Enthusiast
 ---
 
 Happy Learning & Best of Luck for Your Interviews! 🎉
+```
+
